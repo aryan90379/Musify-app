@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48" fill="none">
+  <circle cx="13" cy="37" r="7" stroke="currentColor" stroke-width="3" />
+  <circle cx="36" cy="32" r="6" stroke="currentColor" stroke-width="3" />
+  <path d="M20 37L20 14C20 12.1531 20 11.2297 20.527 10.6559C21.054 10.0821 22.035 9.99841 23.997 9.831C32.044 9.14444 37.818 6.5201 40.7106 4.81956C41.3016 4.472 41.5971 4.29824 41.7986 4.41344C42 4.52864 42 4.863 42 5.53174V32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20 20C31.7334 20 39.5556 15.3333 42 14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="48" y="40" fill="currentColor" font-size="52" font-family="Arial, sans-serif">Musify</text>
+</svg>

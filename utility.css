@@ -1,0 +1,56 @@
+
+/* UTILITY CLASSES = can be used in elements to apply a particular thing to elements */
+.flex{  
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid red;
+}
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+
+
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 15px; 
+     /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1;   */
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+      /* Rounded corners */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(71, 70, 70);  /* Color of the scrollbar handle */
+    border-radius: 10px; 
+     /* Rounded corners */
+     padding: 30px;
+     /* min-height: 34px; */
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Color when hovering over the scrollbar handle */
+}

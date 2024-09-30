@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="cloz">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="home m-1 bg-grey">
+                <div class="logo">
+                    <img class="invert" src="logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li id="srch"><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library m-1">
+                <div class="YourLib">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="playlist.svg" class="invert" width="33px" alt="library">
+                        <div>Your Library</div>
+                    </div>
+                    <img width="23px" style="filter: invert(0.9);" src="image.png" alt="more options">
+                </div>
+                <div class="songsList">
+                    <ul>
+                        <!-- Placeholder for song list items -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="#"><span>Legal</span></a></div>
+                    <div><a href="#"><span>Safety & Privacy Center</span></a></div>
+                    <div><a href="#"><span>Privacy Policy</span></a></div>
+                    <div><a href="#"><span>Cookies</span></a></div>
+                    <div><a href="#"><span>About Ads</span></a></div>
+                    <div><a href="#"><span>Accessibility</span></a></div>
+                    <div><a href="#"><span>Cookies</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger" src="hamburger.svg" alt="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="35" color="rgb(155,155,155)"
+                        fill="none">
+                        <circle cx="26" cy="26" r="26" fill="black" />
+                        <path d="M31.2 12L19.869 24.052C17.643 26.256 17.643 27.944 19.869 30.148L31.2 42.2"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="35" color="rgb(155,155,155)"
+                        fill="none">
+                        <circle cx="26" cy="26" r="26" fill="black" />
+                        <path d="M20.8 12L32.5306 24.052C34.7565 26.256 34.7565 27.944 32.5306 30.148L20.8 42.2"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="buttons" style="display: flex; justify-content: center; align-items: center; gap: 24px;">
+                    <div id="signup">Sign up</div>
+                    <button>Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Musify Playlists</h1>
+                <div class="cards">
+                    <!-- <div data-folder="Indian" class="cardContainer">
+                        <svg class="playbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="60"
+                            height="60">
+                            <circle cx="50" cy="50" r="48" fill="#1ed760" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+
+                        <div class="card">
+                            <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbea3cc43adf643e2aac2f1cbb9ed2f0/2e0307cc-2e73-4a63-9738-9da1b8dbf551_rw_1200.jpg?h=3633712242349b286d31a06e3f1520d6"
+                                alt="playlist cover">
+                            <h2>Bollywood Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness.</p>
+                        </div>
+                    </div>
+                    <div data-folder="English"="" class="cardContainer">
+                        <svg class="playbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="60"
+                            height="60">
+                            <circle cx="50" cy="50" r="48" fill="#1ed760" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+
+                        <div class="card">
+                            <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbea3cc43adf643e2aac2f1cbb9ed2f0/2e0307cc-2e73-4a63-9738-9da1b8dbf551_rw_1200.jpg?h=3633712242349b286d31a06e3f1520d6"
+                                alt="playlist cover">
+                            <h2>World Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness.</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="playbar">
+                    <div class="midbox">
+                        <div class="displaySong">
+                            SongName
+                        </div>
+                        <div class="songbtns">
+                            <img id="previous" src="prvsbtn.svg" alt="previous">
+                            <img id="play" src="playbtn.svg" alt="play">
+                            <img id="next" src="nextbtn.svg" alt="next">
+                        </div>
+
+                        <div class="runtime">
+                            00:00/00:00
+                        </div>
+                        <div class="volume" style="display: flex; justify-content: center; gap: 10px;">
+                            <img src="unmute.svg" alt="">
+                            <input class="range" type="range" name="volume" id="">
+                        </div>
+
+                    </div>
+                    <div class="seekbar">
+                        <div class="passtime"></div>
+                        <!-- <div class="circle"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
